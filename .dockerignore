@@ -1,0 +1,7 @@
+.github
+.vscode
+Makefile
+.git
+.gitignore
+.dockerignore
+Dockerfile
