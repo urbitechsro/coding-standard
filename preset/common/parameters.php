@@ -10,6 +10,11 @@ return function (Symfony\Component\DependencyInjection\Loader\Configurator\Conta
 
 	$parameters->set(Option::INDENTATION, Option::INDENTATION_TAB);
 
+
+	if (isset($_ENV['CACHE_DIRECTORY'])) {
+		$parameters->set(Option::CACHE_DIRECTORY, $_ENV['CACHE_DIRECTORY']);
+	}
+
 	$parameters->set(Option::FILE_EXTENSIONS, ['php', 'phpt']);
 
 	$paths = array_filter([
