@@ -3,24 +3,26 @@
 	"license": "MIT",
 	"require": {
 		"php": "^7.2 || ^8.0",
-		"symplify/easy-coding-standard": "^9.0",
-		"symplify/coding-standard": "^9.0",
 		"slevomat/coding-standard": "^7",
-		"drew/debug-statements-fixers": "^0.5.0"
+		"friendsofphp/php-cs-fixer": "^3",
+		"squizlabs/php_codesniffer": "^3.6",
+		"kubawerlos/php-cs-fixer-custom-fixers": "^3.5"
 	},
 	"require-dev": {
 		"tracy/tracy": "^2.5"
 	},
-	"conflict": {
-		"symplify/set-config-resolver": ">=9.2",
-		"symplify/symplify-kernel": ">=9.3"
-	},
 	"autoload": {
 		"classmap": ["src/"]
 	},
+	"bin": ["ecs"],
 	"extra": {
 		"branch-alias": {
 			"dev-master": "3-dev"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	}
 }
