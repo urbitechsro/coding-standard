@@ -32,4 +32,4 @@ jobs:
         with:
           platforms: linux/arm64, linux/amd64
           push: true
-          tags: urbitech/coding-standard:master
+          tags: urbitech/coding-standard:latest
