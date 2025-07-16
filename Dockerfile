@@ -5,7 +5,7 @@ WORKDIR /coding-standard
 
 RUN composer install --ignore-platform-reqs --no-interaction
 
-FROM php:8.0-cli-alpine
+FROM php:8.1-cli-alpine
 
 RUN apk add icu-dev --no-cache && \
   docker-php-ext-configure intl && \
